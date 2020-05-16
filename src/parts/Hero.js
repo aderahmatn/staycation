@@ -11,7 +11,7 @@ export default function Hero(props) {
 
     function showMostPicked() {
         window.scrollTo({
-            top: props.refMostPicked.current.offsetTop - 20,
+            top: props.refMostPicked.current.offsetTop - 3,
             behavior: "smooth"
         });
     }
