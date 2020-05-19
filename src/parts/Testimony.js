@@ -2,10 +2,12 @@ import React from 'react'
 import Star from 'elements/Star'
 import TestimonyFrame from '../assets/images/image-testimony-frame.jpg'
 import Button from '../elements/Button'
+import Fade from 'react-reveal/Fade';
 
 
 export default function Testimony({ data }) {
     return (
+        <Fade bottom>
         <section className="container">
             <div className="row align-items-center">
                 <div className="col-auto" style={{ marginRight: 60 }}>
@@ -50,6 +52,7 @@ export default function Testimony({ data }) {
                     </div>
                 </div>
             </div>
-        </section>
+            </section>
+            </Fade>
     )
 }

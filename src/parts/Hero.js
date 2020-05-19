@@ -6,6 +6,8 @@ import IconTraveler from '../assets/icons/ic_traveler.svg'
 import IconTreasure from '../assets/icons/ic_treasure.svg'
 import IconCities from '../assets/icons/ic_cities.svg'
 import Button from '../elements/Button'
+import Fade from 'react-reveal/Fade';
+
 
 export default function Hero(props) {
 
@@ -17,6 +19,7 @@ export default function Hero(props) {
     }
 
     return (
+        <Fade bottom>
         <section className="container pt-4">
             <div className="row align-items-center">
                 <div className="col-auto pr-5" style={{ width: 530 }}>
@@ -69,6 +72,7 @@ export default function Hero(props) {
                     </div>
                 </div>
             </div>
-        </section>
+            </section>
+        </Fade>
     )
 }
